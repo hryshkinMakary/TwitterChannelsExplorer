@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterChannelsExplorer.Web", "TwitterChannelsExplorer.Web\TwitterChannelsExplorer.Web.csproj", "{4B7F780D-962B-4EB0-94FF-E0885A6E8EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterChannelsExplorer.ADO", "TwitterChannelsExplorer.ADO\TwitterChannelsExplorer.ADO.csproj", "{C87FE295-316E-4D60-BA6F-4B897A9D696B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterChannelsExplorer.EntityFramework", "TwitterChannelsExplorer.EntityFramework\TwitterChannelsExplorer.EntityFramework.csproj", "{31BCB66E-9583-4FB1-B657-21EA48200085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterChannelsExplorer.Core", "TwitterChannelsExplorer.Core\TwitterChannelsExplorer.Core.csproj", "{E769EA56-73B1-4E2E-91DD-6079F0E44898}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B7F780D-962B-4EB0-94FF-E0885A6E8EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B7F780D-962B-4EB0-94FF-E0885A6E8EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B7F780D-962B-4EB0-94FF-E0885A6E8EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B7F780D-962B-4EB0-94FF-E0885A6E8EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C87FE295-316E-4D60-BA6F-4B897A9D696B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C87FE295-316E-4D60-BA6F-4B897A9D696B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C87FE295-316E-4D60-BA6F-4B897A9D696B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C87FE295-316E-4D60-BA6F-4B897A9D696B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31BCB66E-9583-4FB1-B657-21EA48200085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BCB66E-9583-4FB1-B657-21EA48200085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BCB66E-9583-4FB1-B657-21EA48200085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BCB66E-9583-4FB1-B657-21EA48200085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E769EA56-73B1-4E2E-91DD-6079F0E44898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E769EA56-73B1-4E2E-91DD-6079F0E44898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E769EA56-73B1-4E2E-91DD-6079F0E44898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E769EA56-73B1-4E2E-91DD-6079F0E44898}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

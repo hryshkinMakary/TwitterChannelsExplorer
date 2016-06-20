@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Twitter";
+}
+
+<link href="~/Content/themes/base/all.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-ui-1.11.4.min.js"></script>
+<script src="~/Scripts/CustomScripts/channels.js"></script>
+
+<div class="Category">
+    @Html.ActionLink("Categories", "GetCategories", "Categories", "Categories", new { @class = "Category" })
+</div>
+<h1>Twitter</h1>
+<h3>Enter the name of the channel </h3>
+
+<input type="text" class="form-control" id="input" size="60">
+<div class="block-btn">
+    <input class="btn-lg outline myBtn" id="btnAdd" type="button" value="Add channel" />
+</div>
+<div class="channelsBlock">
+    <ol id="list" type="disc" class="border">
+        @if (Model.Channels.Count != 0)
+        {
+            foreach (var channel in Model.Channels)
+            {
+                <li id="@channel.Id">
+                    <a class="color" href="/Tweets/GetTweets/@channel.Id">@channel.Name</a>
+                    <span id="@channel.Id" class="glyphicon glyphicon-trash glyphicon-plus deleteIcon" onclick="deleteChannelRequest(id)"></span>
+                    <span id="@channel.Id" onclick="chooseCategory(id)">uncategorized</span>
+                </li>
+            }
+        }
+    </ol>
+</div>

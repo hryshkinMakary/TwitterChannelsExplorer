@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Categories";
+}
+<script src="~/Scripts/CustomScripts/categories.js"> </script>
+<h2>Categories</h2>
+<input type="text" class="form-control" id="input" size="60">
+<div class="block-btn">
+    <input class="btn-lg outline myBtn" id="btnAdd" type="button" value="Add Category" />
+</div>
+
+<div class="channelsBlock">
+    <ol id="list" type="disc">
+        @if (Model.Categories.Count != 0)
+        {
+            foreach (var category in Model.Categories)
+            {
+                <li id="@category.Id">
+                    @category.Name
+                    <span id="@category.Id" class="glyphicon glyphicon-trash glyphicon-plus deleteIcon" onclick="deleteCategoryRequest(id);"></span>
+                </li>}
+        }
+    </ol>
+</div>
