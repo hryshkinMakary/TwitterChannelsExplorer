@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 using TweetSharp;
 using System.Data.SqlClient;
 using System.Configuration;
-using TwitterChannelsExplorer.EntityFramework.DbRepositories.RepositoryInterfaces;
-using TwitterChannelsExplorer.EntityFramework.Models;
+using TwitterChannelsExplorer.Core.RepositoryInterfaces;
+using TwitterChannelsExplorer.Core.Models;
 using model = TwitterChannelsExplorer.EntityFramework.TwitterEntityModel;
 
 namespace TwitterChannelsExplorer.EntityFramework.DbRepositories
@@ -61,7 +61,7 @@ namespace TwitterChannelsExplorer.EntityFramework.DbRepositories
 			{
 				var maxDate = _entityModel.Tweets.Max(tweet => tweet.date_time);
 				var newTweets = from tweet in tweets
-								orderby tweet.CreatedDate descending
+								orderby tweet.CreatedDate ascending
 								where tweet.CreatedDate > maxDate
 								select tweet;
 				SaveTweets(channelId, newTweets);

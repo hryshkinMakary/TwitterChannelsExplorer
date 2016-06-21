@@ -4,14 +4,15 @@
     }
 }
 
+
 function addChannelRequest() {
-    sendRequest("/Channels/AddChannel/",'channel='+document.getElementById("input").value, function (id,name) {
-        addChannel(id,name);
+    sendRequest("/Channels/AddChannel/", 'channel=' + document.getElementById("input").value, function (id, name) {
+        addChannel(id, name);
     });
 }
 
 function deleteChannelRequest(id) {
-    sendRequest("/Channels/DeleteChannel/",'id='+id, function () {
+    sendRequest("/Channels/DeleteChannel/", 'id=' + id, function () {
         deleteChannel(id);
     });
 }
@@ -44,10 +45,10 @@ function addChannel(id, name) {
     span.onclick = function (e) {
         deleteChannelRequest(e.target.id);
     }
-    span1.textContent = 'uncategorized';
     span1.id = id;
-    span1.onclik = function (e) {
-        chooseCategory(e.target.id);
+    span1.textContent = 'uncategorized';
+    span1.onclick = function (e) {
+        chooseCategory(e);
     }
     a.setAttribute('href', "/Tweets/GetTweets/" + id);
     a.style.color = "white";
@@ -81,23 +82,17 @@ function drawDeleteAnimation(timePassed, right) {
     right = timePassed / 5 + 'px';
 }
 
-function chooseCategory(id) {
-    var li = document.getElementById(id);
+function chooseCategory(e) {
+    var li = document.getElementById(e.id);
     var input = document.createElement('input');
-    input.name = "q";
-    input.id = "query";
+    input.type = 'text';
     li.appendChild(input);
 
-    $('#query').autocomplete({
-        serviceUrl: '/Channels/AutoComplete', // Страница для обработки запросов автозаполнения
-        minChars: 2, // Минимальная длина запроса для срабатывания автозаполнения
-        delimiter: /(,|;)\s*/, // Разделитель для нескольких запросов, символ или регулярное выражение
-        maxHeight: 400, // Максимальная высота списка подсказок, в пикселях
-        width: 300, // Ширина списка
-        zIndex: 9999, // z-index списка
-        deferRequestBy: 0, // Задержка запроса (мсек), на случай, если мы не хотим слать миллион запросов, пока пользователь печатает. Я обычно ставлю 300.
-        params: { country: 'Yes' }, // Дополнительные параметры
-        onSelect: function (data, value) { }, // Callback функция, срабатывающая на выбор одного из предложенных вариантов,
-        lookup: ['January', 'February', 'March'] // Список вариантов для локального автозаполнения
+    $(input).autocomplete({
+        source: 'Categories/GetCategoryAutoComplete/' + input.value,
+        select: function (ui) {
+            e.textContent = ui.currentTarget.innerText
+            li.removeChild(input);
+        }
     });
 }

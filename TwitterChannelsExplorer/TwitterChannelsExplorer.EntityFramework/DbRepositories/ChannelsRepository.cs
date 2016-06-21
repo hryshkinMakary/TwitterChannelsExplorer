@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
-using TwitterChannelsExplorer.EntityFramework.DbRepositories.RepositoryInterfaces;
-using TwitterChannelsExplorer.EntityFramework.Exceptions;
+using TwitterChannelsExplorer.Core.RepositoryInterfaces;
+using TwitterChannelsExplorer.Core.Models;
 using model = TwitterChannelsExplorer.EntityFramework.TwitterEntityModel;
-using TwitterChannelsExplorer.EntityFramework.Models;
+using TwitterChannelsExplorer.EntityFramework.Exceptions;
 
 namespace TwitterChannelsExplorer.EntityFramework.DbRepositories
 {
@@ -44,7 +44,7 @@ namespace TwitterChannelsExplorer.EntityFramework.DbRepositories
 			}
 			catch (Exception exception)
 			{
-				throw new TwitterApplicationExceptions(TwitterServiceExceptions.FailedConnectionToDb);
+				throw new DBApplicationExceptions(DBServiceExceptions.FailedConnectionToDb);
 			}
 		}
 		public bool DeleteChannel(int id)

@@ -1,7 +1,8 @@
 ﻿using System.Web.Mvc;
 using TwitterChannelsExplorer.Core;
 using System;
-using TwitterChannelsExplorer.Core.Factories;
+using TwitterChannelsExplorer.TwitterService.Factories;
+
 
 namespace TwitterChannelsExplorer.Core
 {
@@ -54,12 +55,6 @@ namespace TwitterChannelsExplorer.Core
 
 			return Json(new { status = status });
 		}
-		[HttpGet]
-		public JsonResult AutoComplete()
-		{
-			return Json(new { status = "Hello" });
-		}
-
 		#endregion
 	}
 }

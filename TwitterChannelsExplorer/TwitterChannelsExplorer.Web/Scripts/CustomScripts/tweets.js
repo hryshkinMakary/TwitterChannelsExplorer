@@ -31,7 +31,7 @@ function showNewTweets(model) {
     var tweets = $.map(model, function (el) {
         return el
     });
-    for (var i = tweets.length-1; i>0; i--) {
+    for (var i = 1; i<tweets.length; i++) {
         var img = document.createElement('img');
         img.setAttribute('src', tweets[i].Src_Image);
         img.setAttribute('class', 'img-rounded');

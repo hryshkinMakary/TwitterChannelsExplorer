@@ -4,9 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using TwitterChannelsExplorer.Web;
-using TwitterChannelsExplorer.Core.Factories;
-
-
+using TwitterChannelsExplorer.TwitterService.Factories;
 
 namespace TwitterChannelsExplorer.Web.Web.Controllers
 {
@@ -51,6 +49,13 @@ namespace TwitterChannelsExplorer.Web.Web.Controllers
 			}
 
 			return Json(new { status = status });
+		}
+
+		public JsonResult GetCategoryAutoComplete(string term)
+		{
+			var service = ServicesFactory.GetCategoriesService();
+			var categoriesModel =  service.GetCategoriesAutoCompeteModel(term);
+			return Json(categoriesModel,JsonRequestBehavior.AllowGet);
 		}
 	}
 }

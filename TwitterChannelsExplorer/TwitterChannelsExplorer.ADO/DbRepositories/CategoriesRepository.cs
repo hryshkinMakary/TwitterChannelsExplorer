@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
-using TwitterChannelsExplorer.ADO.DbRepositories.RepositoryInterfaces;
-using TwitterChannelsExplorer.ADO.Models;
+using TwitterChannelsExplorer.Core.RepositoryInterfaces;
+using TwitterChannelsExplorer.Core.Models;
 
 
 namespace TwitterChannelsExplorer.ADO.DbRepositories
@@ -97,6 +97,11 @@ namespace TwitterChannelsExplorer.ADO.DbRepositories
 			{
 				return false;
 			}
+		}
+
+		public IList<string> GetCategoriesAutoCompeteModel(string term)
+		{
+			throw new NotImplementedException();
 		}
 		#endregion
 	}

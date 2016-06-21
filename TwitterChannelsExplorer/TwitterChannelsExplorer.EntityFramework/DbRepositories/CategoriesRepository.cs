@@ -5,13 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
-using TwitterChannelsExplorer.EntityFramework.DbRepositories.RepositoryInterfaces;
-using TwitterChannelsExplorer.EntityFramework.Models;
+using TwitterChannelsExplorer.Core.RepositoryInterfaces;
+using  Models = TwitterChannelsExplorer.Core.Models;
 using TwitterChannelsExplorer.EntityFramework.TwitterEntityModel;
 using model = TwitterChannelsExplorer.EntityFramework.TwitterEntityModel;
-
-
-
 
 namespace TwitterChannelsExplorer.EntityFramework.DbRepositories
 {
@@ -29,9 +26,9 @@ namespace TwitterChannelsExplorer.EntityFramework.DbRepositories
 			_entityModel = new model.TwitterEntityModel();
 			_connectionString = ConfigurationManager.ConnectionStrings["TwitterDatabase"].ConnectionString;
 		}
-		public CategoriesModel GetCategoriesModel()
+		public Models.CategoriesModel GetCategoriesModel()
 		{
-			var categoriesModel = new CategoriesModel();
+			var categoriesModel = new Models.CategoriesModel();
 			var categories = from category
 						   in _entityModel.Categories
 						   orderby category.date descending
@@ -69,6 +66,11 @@ namespace TwitterChannelsExplorer.EntityFramework.DbRepositories
 			{
 				return false;
 			}
+		}
+		public IList<string> GetCategoriesAutoCompeteModel(string term)
+		{
+			return _entityModel.Categories.Where(p => p.name.StartsWith(term))
+				.Select(p => p.name).ToList();
 		}
 		#endregion
 	}

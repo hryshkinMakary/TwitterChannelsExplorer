@@ -50,34 +50,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Exceptions\TwitterApplicationExceptions.cs" />
-    <Compile Include="Exceptions\TwitterServiceException.cs" />
-    <Compile Include="Factories\RepositoriesFactory.cs" />
-    <Compile Include="Factories\ServicesFactory.cs" />
+    <Compile Include="Models\CategoriesModel.cs" />
+    <Compile Include="Models\ChannelsModel.cs" />
+    <Compile Include="Models\TweetsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwitterApi.cs" />
-    <Compile Include="TwitterServices\CategoriesService.cs" />
-    <Compile Include="TwitterServices\ChanneslService.cs" />
-    <Compile Include="TwitterServices\ServicesInterfaces\ITwitterCategoriesService.cs" />
-    <Compile Include="TwitterServices\ServicesInterfaces\ITwitterChannelsService.cs" />
-    <Compile Include="TwitterServices\ServicesInterfaces\ITwitterTweetsService.cs" />
-    <Compile Include="TwitterServices\TweetsService.cs" />
+    <Compile Include="RepositoryInterfaces\ITwitterCategoriesRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ITwitterChannelsRepository.cs" />
+    <Compile Include="RepositoryInterfaces\ITwitterTweetsRepository.cs" />
+    <Compile Include="ServicesInterfaces\ITwitterCategoriesService.cs" />
+    <Compile Include="ServicesInterfaces\ITwitterChannelsService.cs" />
+    <Compile Include="ServicesInterfaces\ITwitterTweetsService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TwitterChannelsExplorer.ADO\TwitterChannelsExplorer.ADO.csproj">
-      <Project>{c87fe295-316e-4d60-ba6f-4b897a9d696b}</Project>
-      <Name>TwitterChannelsExplorer.ADO</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TwitterChannelsExplorer.EntityFramework\TwitterChannelsExplorer.EntityFramework.csproj">
-      <Project>{31bcb66e-9583-4fb1-b657-21ea48200085}</Project>
-      <Name>TwitterChannelsExplorer.EntityFramework</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

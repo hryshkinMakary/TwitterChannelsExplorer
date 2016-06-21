@@ -19,3 +19,16 @@ F:\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\TweetSharp.pdb
 F:\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\obj\Debug\TwitterChannelsExplorer.ADO.dll
 F:\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\obj\Debug\TwitterChannelsExplorer.ADO.pdb
 F:\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\obj\Debug\TwitterChannelsExplorer.ADO.csprojResolveAssemblyReference.cache
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\obj\Debug\TwitterChannelsExplorer.ADO.csprojResolveAssemblyReference.cache
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\obj\Debug\TwitterChannelsExplorer.ADO.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\obj\Debug\TwitterChannelsExplorer.ADO.pdb
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\TwitterChannelsExplorer.ADO.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\TwitterChannelsExplorer.ADO.pdb
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\Hammock.ClientProfile.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\Newtonsoft.Json.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\TweetSharp.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\TwitterChannelsExplorer.Core.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\TwitterChannelsExplorer.Core.pdb
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\Hammock.ClientProfile.pdb
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\Newtonsoft.Json.xml
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.ADO\bin\Debug\TweetSharp.pdb

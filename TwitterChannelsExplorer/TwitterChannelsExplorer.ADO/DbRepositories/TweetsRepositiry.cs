@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 using TweetSharp;
 using System.Data.SqlClient;
 using System.Configuration;
-using TwitterChannelsExplorer.ADO.DbRepositories.RepositoryInterfaces;
-using TwitterChannelsExplorer.ADO.Models;
-
+using TwitterChannelsExplorer.Core.RepositoryInterfaces;
+using TwitterChannelsExplorer.Core.Models;
 
 namespace TwitterChannelsExplorer.ADO.DbRepositories
 {

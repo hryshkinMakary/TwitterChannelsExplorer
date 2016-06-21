@@ -55,19 +55,19 @@
   <ItemGroup>
     <Compile Include="DbRepositories\CategoriesRepository.cs" />
     <Compile Include="DbRepositories\ChannelsRepository.cs" />
-    <Compile Include="DbRepositories\RepositoryInterfaces\ITwitterCategoriesRepository.cs" />
-    <Compile Include="DbRepositories\RepositoryInterfaces\ITwitterChannelsRepository.cs" />
-    <Compile Include="DbRepositories\RepositoryInterfaces\ITwitterTweetsRepository.cs" />
     <Compile Include="DbRepositories\TweetsRepositiry.cs" />
-    <Compile Include="Exceptions\TwitterApplicationExceptions.cs" />
-    <Compile Include="Exceptions\TwitterServiceException.cs" />
-    <Compile Include="Models\CategoriesModel.cs" />
-    <Compile Include="Models\ChannelsModel.cs" />
-    <Compile Include="Models\TweetsModel.cs" />
+    <Compile Include="Exceptions\DBApplicationExceptions.cs" />
+    <Compile Include="Exceptions\DBServiceExceptions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TwitterChannelsExplorer.Core\TwitterChannelsExplorer.Core.csproj">
+      <Project>{e769ea56-73b1-4e2e-91dd-6079f0e44898}</Project>
+      <Name>TwitterChannelsExplorer.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

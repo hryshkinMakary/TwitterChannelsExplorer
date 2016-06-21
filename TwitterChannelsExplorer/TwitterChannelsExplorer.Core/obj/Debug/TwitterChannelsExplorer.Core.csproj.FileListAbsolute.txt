@@ -32,3 +32,13 @@ D:\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\TwitterChannel
 D:\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\EntityFramework.dll
 D:\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\TwitterChannelsExplorer.EntityFramework.pdb
 D:\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\EntityFramework.xml
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\TwitterChannelsExplorer.Core.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\TwitterChannelsExplorer.Core.pdb
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\Hammock.ClientProfile.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\Newtonsoft.Json.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\TweetSharp.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\Hammock.ClientProfile.pdb
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\Newtonsoft.Json.xml
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\bin\Debug\TweetSharp.pdb
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\obj\Debug\TwitterChannelsExplorer.Core.dll
+D:\git\TwitterChannelsExplorer\TwitterChannelsExplorer.Core\obj\Debug\TwitterChannelsExplorer.Core.pdb
